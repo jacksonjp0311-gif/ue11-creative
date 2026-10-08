@@ -69,7 +69,7 @@ window.UE11_PRODUCTS = [
     contents: ["15 emotes: Twitch 112/56/28 px + Discord 128 px (60 PNGs)", "15 transparent sticker PNGs", "15 high-res masters", "2 screensaver scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
   },
   {
-    slug: "kitsune-ember-seal", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kitsune-ember-seal",
+    slug: "kitsune-ember-seal", status: "soon", url: "",
     name: "Kitsune", title: "Kitsune Ember Seal Emote Pack", oc: "", jp: "狐", line: "yokai", price: 17,
     hook: "24 emotes of an ember fox spirit, plus shrine screensavers and a 狐 seal set.",
     art: "assets/gallery/kitsune-ember-seal.webp",
