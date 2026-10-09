@@ -174,7 +174,7 @@ window.UE11_PRODUCTS = [
     contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 screensaver scenes", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
   },
   {
-    slug: "kabocha-ronin", status: "soon", url: "",
+    slug: "kabocha-ronin", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kabocha-ronin",
     name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 19,
     hook: "26 emotes of Jinpachi, a jack-o'-lantern-masked ronin, plus 4K yokai battle scenes.",
     art: "assets/gallery/kabocha-ronin.webp",
