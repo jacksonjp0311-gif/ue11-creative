@@ -78,6 +78,8 @@ h1{margin:0;font-weight:400}
 .btn-text{display:inline-block;line-height:44px;min-height:44px;font-size:.95rem;text-underline-offset:6px;text-decoration-thickness:1px;color:var(--washi-2)}
 .btn-text:hover{color:var(--neon)}
 .price-line{margin:22px 0 0;font-size:.86rem;color:var(--washi-dim)}
+.season-note{margin:10px 0 0;font-size:.82rem;letter-spacing:.04em;color:var(--sakura)}
+.season-note [lang=ja]{font-family:var(--f-brush);color:var(--shu-text);margin-right:8px;font-size:1rem}
 
 .hero-art{position:relative;margin:0;justify-self:center;width:min(100%,600px);aspect-ratio:1/1.02;display:grid;place-items:end center}
 .hero-kanji{position:absolute;left:62%;top:38%;transform:translate(-50%,-50%);z-index:-1;font:400 min(50vw,700px)/1 var(--f-brush);color:var(--washi);opacity:.13;filter:url(#ink);will-change:transform;user-select:none}
@@ -158,8 +160,8 @@ h2{margin:0;font:600 clamp(2rem,4.2vw,3.5rem)/1.12 var(--f-serif);text-wrap:bala
 
 /* ── lines ── */
 .lines-sec{background:var(--sumi-2)}
-.lines{display:grid;grid-template-columns:repeat(4,1fr);max-width:1280px;margin:0 auto;border-top:1px solid rgba(241,235,223,.14)}
-.line{position:relative;display:flex;flex-direction:column;text-decoration:none;padding:150px 28px 40px;border-right:1px solid rgba(241,235,223,.14);overflow:hidden;transition:background .4s}
+.lines{display:grid;grid-template-columns:repeat(5,1fr);max-width:1280px;margin:0 auto;border-top:1px solid rgba(241,235,223,.14)}
+.line{position:relative;display:flex;flex-direction:column;text-decoration:none;padding:150px 22px 40px;border-right:1px solid rgba(241,235,223,.14);overflow:hidden;transition:background .4s}
 .line:last-child{border-right:0}
 .line-k{position:absolute;right:18px;top:16px;font:400 clamp(6rem,9vw,8.5rem)/1 var(--f-brush);color:transparent;-webkit-text-stroke:1px rgba(241,235,223,.22);transition:color .5s var(--ease),-webkit-text-stroke-color .5s;filter:url(#ink);white-space:nowrap}
 .line-kawaii .line-k{font-size:clamp(3.6rem,5.4vw,5.2rem);top:30px}
@@ -256,8 +258,8 @@ h2{margin:0;font:600 clamp(2rem,4.2vw,3.5rem)/1.12 var(--f-serif);text-wrap:bala
   .grid .end-tile:nth-child(3n+2){grid-column:span 2}
   .grid .end-tile:nth-child(3n+3){grid-column:span 1}
   .lines{grid-template-columns:repeat(2,1fr)}
-  .line:nth-child(2){border-right:0}
-  .line:nth-child(-n+2){border-bottom:1px solid rgba(241,235,223,.14)}
+  .line:nth-child(2n){border-right:0}
+  .line:nth-child(-n+4){border-bottom:1px solid rgba(241,235,223,.14)}
 }
 @media (max-width:860px){
   .nav-links{display:none}

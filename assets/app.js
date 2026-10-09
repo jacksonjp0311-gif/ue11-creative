@@ -92,7 +92,7 @@
   /* ── lightbox ── */
   var lb = $("lightbox"), cur = 0;
   /* the gallery art's ground colour per line (tools/build_art.py BG), so the full-height image column has no seam */
-  var ART_BG = { samurai: "#14110e", kawaii: "#f0e9db", yokai: "#181b38", stream: "#0e1a1c" };
+  var ART_BG = { samurai: "#14110e", kawaii: "#f0e9db", yokai: "#181b38", halloween: "#160e1c", stream: "#0e1a1c" };
   function openAt(idx) {
     if (!shown.length) return;
     cur = (idx + shown.length) % shown.length;

@@ -14,10 +14,11 @@
  */
 window.UE11_SHOP = "https://unifiedenergy11.gumroad.com";
 window.UE11_LINES = {
-  samurai: { name: "Samurai", jp: "侍" },
-  kawaii:  { name: "Kawaii", jp: "可愛い" },
-  yokai:   { name: "Yokai & Animals", jp: "妖" },
-  stream:  { name: "Stream & Tools", jp: "配信" }
+  samurai:   { name: "Samurai", jp: "侍" },
+  kawaii:    { name: "Kawaii", jp: "可愛い" },
+  yokai:     { name: "Yokai & Animals", jp: "妖" },
+  halloween: { name: "Halloween", jp: "祭" },
+  stream:    { name: "Stream & Tools", jp: "配信" }
 };
 window.UE11_PRODUCTS = [
   {
@@ -83,6 +84,22 @@ window.UE11_PRODUCTS = [
     art: "assets/gallery/oni-pulse-mask.webp",
     sampleKind: "emote", samples: ["assets/emotes/oni-pulse-mask/hype.png", "assets/emotes/oni-pulse-mask/gg.png", "assets/emotes/oni-pulse-mask/lul.png", "assets/emotes/oni-pulse-mask/love.png"],
     contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
+  },
+  {
+    slug: "chochin-lantern-ghost", status: "live", url: "https://unifiedenergy11.gumroad.com/l/chochin-lantern-ghost",
+    name: "Chōchin", title: "Halloween Kawaii Ghost Twitch Emotes & Discord Stickers | Chochi Lantern OC", oc: "Chochi", jp: "提灯", line: "halloween", price: 14,
+    hook: "16 mood-glow lantern-ghost emotes, soft Halloween scenes, bonus stickers and Twitch sub badges.",
+    art: "assets/gallery/chochin-lantern-ghost.webp",
+    sampleKind: "emote", samples: ["assets/emotes/chochin-lantern-ghost/hype.png", "assets/emotes/chochin-lantern-ghost/gg.png", "assets/emotes/chochin-lantern-ghost/lul.png", "assets/emotes/chochin-lantern-ghost/love.png"],
+    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "3 soft screensaver scenes (4K + 1080p)", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "10 Halloween bonus stickers + printable sheet", "3-tier Twitch sub badges (72/36/18 px)", "Upload guide, README and LICENSE"]
+  },
+  {
+    slug: "komori-candy-bat", status: "live", url: "https://unifiedenergy11.gumroad.com/l/komori-candy-bat",
+    name: "Komori", title: "Halloween Kawaii Bat Twitch Emotes & Discord Stickers | Komori Candy Bat OC", oc: "Komori", jp: "蝙蝠", line: "halloween", price: 14,
+    hook: "16 candy-bat emotes in hang and upright poses, soft night scenes, bonus stickers and Twitch sub badges.",
+    art: "assets/gallery/komori-candy-bat.webp",
+    sampleKind: "emote", samples: ["assets/emotes/komori-candy-bat/hype.png", "assets/emotes/komori-candy-bat/gg.png", "assets/emotes/komori-candy-bat/lul.png", "assets/emotes/komori-candy-bat/love.png"],
+    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "3 soft screensaver scenes (4K + 1080p)", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "10 Halloween bonus stickers + printable sheet", "3-tier Twitch sub badges (72/36/18 px)", "Upload guide, README and LICENSE"]
   },
   {
     slug: "origami-friends", status: "live", url: "https://unifiedenergy11.gumroad.com/l/origami-friends",
