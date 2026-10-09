@@ -27,6 +27,31 @@
   function nSoon(line) { return SOON.filter(function (p) { return line === "all" || p.line === line; }).length; }
   function chipCount(line) { var s = nSoon(line); return nLive(line) + " live" + (s ? " · " + s + " soon" : ""); }
 
+  /* ── halloween highlight: live = price + buy link, soon = "Dropping today", no link ── */
+  var FEAT = window.UE11_FEATURE || [], featEl = $("feature");
+  if (featEl && FEAT.length) {
+    var anySoon = false, anyLive = false;
+    featEl.innerHTML = FEAT.map(function (f, i) {
+      var p = ALL.filter(function (q) { return q.slug === f.slug; })[0]; if (!p) return "";
+      var live = isLive(p); if (live) anyLive = true; else anySoon = true;
+      var img = '<img src="' + esc(f.art) + '" width="' + f.w + '" height="' + f.h + '" loading="' + (i ? "lazy" : "eager") + '" decoding="async" alt="' + esc(p.title) + '">' +
+        '<span class="feat-jp" lang="ja" aria-hidden="true">' + esc(p.jp) + '</span>';
+      return '<article class="feat ' + (i ? "feat-side" : "feat-main") + '">' +
+        (live ? '<a class="feat-art" href="' + esc(p.url) + '" tabindex="-1" aria-hidden="true">' + img + '</a>' : '<div class="feat-art">' + img + '</div>') +
+        '<div class="feat-cap">' +
+          '<p class="label-shu">' + esc(f.kicker) + '</p>' +
+          '<h3>' + esc(p.name) + '</h3>' + (live ? '<span class="price">$' + p.price + '</span>' : '') +
+          '<p class="feat-tag">' + esc(f.tagline) + '</p>' +
+          '<p class="hook">' + esc(f.blurb) + '</p>' +
+          '<div class="feat-cta">' + (live
+            ? '<a class="card-buy" href="' + esc(p.url) + '">Get it on Gumroad <span aria-hidden="true">→</span></a>'
+            : '<span class="drop-badge"><span lang="ja">近日</span> Dropping today</span>') + '</div>' +
+        '</div></article>';
+    }).join("");
+    var st = document.querySelector("[data-feature-state]");
+    if (st) st.textContent = anySoon ? (anyLive ? "· live & dropping today" : "drop today") : "· live now";
+  }
+
   /* ── filters ── */
   var filtersEl = $("filters"), current = "all";
   if (filtersEl) {

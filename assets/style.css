@@ -332,3 +332,34 @@ h2{margin:0;font:600 clamp(2rem,4.2vw,3.5rem)/1.12 var(--f-serif);text-wrap:bala
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
   .petals{display:none}
 }
+
+/* ── halloween highlight (祭) ── */
+.feature-sec{background:radial-gradient(ellipse 70% 60% at 30% 40%,rgba(181,54,31,.16),transparent 70%),var(--sumi);overflow:hidden}
+.t-feature{position:absolute;right:var(--pad);top:clamp(80px,10vw,150px);font-family:var(--f-brush);font-size:1.6rem;letter-spacing:.4em;color:var(--shu-text);opacity:.8}
+.feature{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(0,1fr);gap:clamp(20px,2.6vw,40px);max-width:1280px;margin:0 auto}
+.feat{position:relative;margin:0;min-width:0;display:flex;flex-direction:column;background:var(--sumi-2);border:1px solid rgba(241,235,223,.12);border-radius:3px;overflow:hidden}
+.feat-art{position:relative;display:block;overflow:hidden;background:#160e1c}
+.feat-art img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.feat-main .feat-art{aspect-ratio:16/9}
+.feat-side .feat-art{aspect-ratio:1}
+.feat:hover .feat-art img{transform:scale(1.03)}
+.feat-art::after{content:"";position:absolute;inset:auto 0 0 0;height:40%;background:linear-gradient(transparent,rgba(24,21,18,.85))}
+.feat-jp{position:absolute;z-index:2;left:clamp(16px,2vw,28px);bottom:clamp(10px,1.4vw,20px);font:400 clamp(1.6rem,3.4vw,3rem)/1 var(--f-brush);color:var(--washi);letter-spacing:.12em;text-shadow:0 2px 18px rgba(0,0,0,.8)}
+.feat-side .feat-jp{font-size:clamp(1.3rem,2.2vw,2rem)}
+.feat-cap{display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:6px 16px;padding:clamp(18px,2vw,28px);flex:1}
+.feat-cap .label-shu{grid-column:1/-1}
+.feat-cap h3{margin:0;font:600 clamp(1.3rem,2vw,1.75rem)/1.2 var(--f-serif)}
+.feat-tag{grid-column:1/-1;margin:0;font:500 1.02rem/1.4 var(--f-serif);color:var(--sakura)}
+.feat-cap .hook{margin-top:6px}
+.feat-cta{grid-column:1/-1;margin-top:8px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.drop-badge{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;border:1.5px solid var(--shu-text);border-radius:2px;color:var(--shu-text);font:700 .78rem/1 var(--f-sans);letter-spacing:.18em;text-transform:uppercase}
+.drop-badge [lang=ja]{font:400 1.05rem/1 var(--f-brush);letter-spacing:0}
+.drop-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--shu-text);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.25}}
+.season-note a{color:var(--sakura);text-underline-offset:4px}
+.season-note a:hover{color:var(--neon)}
+@media (max-width:860px){
+  .feature{grid-template-columns:1fr}
+  .t-feature{display:none}
+  .feat-side .feat-art{aspect-ratio:4/3}
+}

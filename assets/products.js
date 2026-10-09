@@ -172,5 +172,31 @@ window.UE11_PRODUCTS = [
     art: "assets/gallery/usagi-moon-mail.webp",
     sampleKind: "emote", samples: ["assets/emotes/usagi-moon-mail/hype.png", "assets/emotes/usagi-moon-mail/gg.png", "assets/emotes/usagi-moon-mail/love.png", "assets/emotes/usagi-moon-mail/blush.png"],
     contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 screensaver scenes", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
+  },
+  {
+    slug: "kabocha-ronin", status: "soon", url: "",
+    name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 19,
+    hook: "26 emotes of Jinpachi, a jack-o'-lantern-masked ronin, plus 4K yokai battle scenes.",
+    art: "assets/gallery/kabocha-ronin.webp",
+    sampleKind: "emote", samples: ["assets/emotes/kabocha-ronin/hype.png", "assets/emotes/kabocha-ronin/boo.png", "assets/emotes/kabocha-ronin/lurk.png", "assets/emotes/kabocha-ronin/heart_eyes.png"],
+    contents: ["26 emotes: Twitch 112/56/28 px + Discord 128 px (104 PNGs)", "26 die-cut sticker PNGs", "26 transparent 1024 px masters", "4 battle screensavers (4K, 3840x2160)", "Japanese autograph set: calligraphy card, brush-signature card, tategaki letter sheet, hanko sheet + 5 transparent seal/signature overlays", "README and LICENSE"]
+    },
+  {
+    slug: "samurai-hyakki-yagyo", status: "soon", url: "",
+    name: "Hyakki Yagyō", title: "UE11 Samurai: Hyakki Yagyō: Night of a Hundred Demons", oc: "Aoi, Rei, Kurogane, Zero-Blade", jp: "百鬼夜行", line: "halloween", price: 29,
+    hook: "A five-chapter Halloween story starring all four samurai, with battle art, manga pages, a storybook, 28 emotes and 26 chibi stickers.",
+    art: "assets/gallery/samurai-hyakki-yagyo.webp",
+    sampleKind: "emote", samples: ["assets/emotes/samurai-hyakki-yagyo/rei-boo.png", "assets/emotes/samurai-hyakki-yagyo/aoi-jackogrin.png", "assets/emotes/samurai-hyakki-yagyo/kurogane-candyhype.png", "assets/emotes/samurai-hyakki-yagyo/zero-slash.png"],
+    contents: ["5 battle illustrations (1920x1080 + 4K 3840x2160) and a 4K group key art", "5 manga story pages (1080x1920) and a 16-page storybook PDF", "3 phone wallpapers (1080x1920 + 1440x2560)", "28 Halloween emotes: Twitch 112/56/28 px + Discord 128 px (112 PNGs), plus 28 transparent 1024 px masters", "Bonus: 26 chibi die-cut stickers (20 samurai in costume + 6 yokai) with 2048 px print masters", "Bonus: Neo-Pixel cyberpunk pixel art: 4 portraits, 4 idle GIFs, a rooftop scene, 16 pixel emotes, a pixel badge (74 files)", "Japanese autograph set: brush-signature portrait card, calligraphy card, tategaki letter sheet, 5 hanko overlays", "README and LICENSE"]
   }
+];
+/* Halloween highlight near the top of the page (app.js renders it).
+   Live packs get price + buy link; "soon" packs show "Dropping today" with no link. Flip with ../flip_live.sh <slug> <url>. */
+window.UE11_FEATURE = [
+  { slug: "samurai-hyakki-yagyo", art: "assets/feature/hyakki-blood-moon.webp", w: 1600, h: 900,
+    kicker: "Halloween story pack", tagline: "Night of a Hundred Demons",
+    blurb: "Aoi, Rei, Kurogane and Zero-Blade fight through five chapters to the Pumpkin Lord: battle art, manga pages, a storybook, 28 emotes and 26 chibi stickers." },
+  { slug: "kabocha-ronin", art: "assets/gallery/kabocha-ronin.webp", w: 800, h: 800,
+    kicker: "Halloween samurai", tagline: "Jinpachi, the jack-o'-lantern ronin",
+    blurb: "26 emotes of a ronin behind a pumpkin mask, plus 4K yokai battle scenes." }
 ];
