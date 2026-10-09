@@ -182,7 +182,7 @@ window.UE11_PRODUCTS = [
     contents: ["26 emotes: Twitch 112/56/28 px + Discord 128 px (104 PNGs)", "26 die-cut sticker PNGs", "26 transparent 1024 px masters", "4 battle screensavers (4K, 3840x2160)", "Japanese autograph set: calligraphy card, brush-signature card, tategaki letter sheet, hanko sheet + 5 transparent seal/signature overlays", "README and LICENSE"]
     },
   {
-    slug: "samurai-hyakki-yagyo", status: "soon", url: "",
+    slug: "samurai-hyakki-yagyo", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-hyakki-yagyo",
     name: "Hyakki Yagyō", title: "UE11 Samurai: Hyakki Yagyō: Night of a Hundred Demons", oc: "Aoi, Rei, Kurogane, Zero-Blade", jp: "百鬼夜行", line: "halloween", price: 29,
     hook: "A five-chapter Halloween story starring all four samurai, with battle art, manga pages, a storybook, 28 emotes and 26 chibi stickers.",
     art: "assets/gallery/samurai-hyakki-yagyo.webp",
