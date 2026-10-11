@@ -3,7 +3,7 @@
  * Every count on the page (headline, line cards, filter chips, end tile) is computed from this list by app.js.
  *
  * Fields
- *   name     = short name shown on the card ("Rei", "Golden Hour")
+ *   name     = short name shown on the card ("Rei", "Neon Sakura")
  *   title    = the full product name as listed on Gumroad (lightbox heading, alt text)
  *   status   = "live" or "soon". A pack only counts as live when its url is a real
  *              https://unifiedenergy11.gumroad.com/l/<permalink> address copied from the live page. Never guess one.
@@ -18,7 +18,7 @@ window.UE11_LINES = {
   kawaii:    { name: "Kawaii", jp: "可愛い" },
   yokai:     { name: "Yokai & Animals", jp: "妖" },
   halloween: { name: "Halloween", jp: "祭" },
-  stream:    { name: "Stream & Tools", jp: "配信" }
+  stream:    { name: "Stream & Emotes", jp: "配信" }
 };
 window.UE11_PRODUCTS = [
   {
@@ -124,22 +124,6 @@ window.UE11_PRODUCTS = [
     art: "assets/gallery/emote-lab-vol1.webp",
     sampleKind: "emote", samples: ["assets/emotes/emote-lab-vol1/hype.png", "assets/emotes/emote-lab-vol1/gg.png", "assets/emotes/emote-lab-vol1/lul.png", "assets/emotes/emote-lab-vol1/love.png"],
     contents: ["24 emotes: Twitch 112/56/28 px + Discord 128 px (96 PNGs)", "24 high-res masters", "Upload guide, README and LICENSE"]
-  },
-  {
-    slug: "golden-hour-atmosphere", status: "live", url: "https://unifiedenergy11.gumroad.com/l/golden-hour-overlays",
-    name: "Golden Hour", title: "Golden Hour Atmosphere Overlay Pack", oc: "", jp: "夕日", line: "stream", price: 15,
-    hook: "48 transparent PNG light leaks, dust and bokeh for a late-day glow.",
-    art: "assets/gallery/golden-hour-atmosphere.webp",
-    sampleKind: "thumb", samples: ["assets/samples/golden-hour-atmosphere/light-leak-03.webp", "assets/samples/golden-hour-atmosphere/dust-03.webp", "assets/samples/golden-hour-atmosphere/bokeh-haze-05.webp"],
-    contents: ["16 light leaks, 16 dust, 16 bokeh + haze PNGs (1920×1280)", "README and LICENSE"]
-  },
-  {
-    slug: "chibi-sticker-lab", status: "live", url: "https://unifiedenergy11.gumroad.com/l/chibi-sticker-lab",
-    name: "Chibi Prompts", title: "Chibi Sticker Lab Prompt Pack", oc: "", jp: "ちび", line: "stream", price: 12,
-    hook: "90 Midjourney and SD prompts for thick-outline, die-cut chibi stickers.",
-    art: "assets/gallery/chibi-sticker-lab.webp",
-    sampleKind: "thumb", samples: ["assets/samples/chibi-sticker-lab/01-animals-01.webp", "assets/samples/chibi-sticker-lab/02-food-03.webp", "assets/samples/chibi-sticker-lab/04-fantasy-07.webp", "assets/samples/chibi-sticker-lab/05-emotes-09.webp"],
-    contents: ["90 prompts (PROMPTS.md + PDF), workflow guide and sample images", "README and LICENSE"]
   },
   {
     slug: "neko-night-shift", status: "soon", url: "",

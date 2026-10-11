@@ -138,7 +138,7 @@
       return '<figure><img src="' + esc(s) + '" alt="' + esc(n) + '" loading="lazy"><figcaption>' + esc(n) + "</figcaption></figure>";
     }).join("");
     $("lb-contents").innerHTML = (p.contents || []).map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("");
-    var fig = lb.querySelector(".lb-fig"); if (fig) fig.style.backgroundColor = p.slug === "golden-hour-atmosphere" ? "#0c0a09" : (ART_BG[p.line] || "");
+    var fig = lb.querySelector(".lb-fig"); if (fig) fig.style.backgroundColor = (ART_BG[p.line] || "");
     var inner = lb.querySelector(".lb-inner"), body = lb.querySelector(".lb-body");
     if (inner) inner.scrollTop = 0; if (body) body.scrollTop = 0;
     if (!lb.open) { if (lb.showModal) lb.showModal(); else window.location.href = p.url; }
