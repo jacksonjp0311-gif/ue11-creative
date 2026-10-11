@@ -27,20 +27,20 @@
   function nSoon(line) { return SOON.filter(function (p) { return line === "all" || p.line === line; }).length; }
   function chipCount(line) { var s = nSoon(line); return nLive(line) + " live" + (s ? " · " + s + " soon" : ""); }
 
-  /* ── halloween highlight: live = price + buy link, soon = "Dropping today", no link ── */
-  var FEAT = window.UE11_FEATURE || [], featEl = $("feature");
-  if (featEl && FEAT.length) {
+  /* ── highlights: live = price + buy link, soon = "Dropping today", no link ──
+     #deluxe renders UE11_DELUXE (two equal 16:9 cards); #feature renders UE11_FEATURE (Halloween, main + side). */
+  function featureHtml(list, pair) {
     var anySoon = false, anyLive = false;
-    featEl.innerHTML = FEAT.map(function (f, i) {
+    var html = list.map(function (f, i) {
       var p = ALL.filter(function (q) { return q.slug === f.slug; })[0]; if (!p) return "";
       var live = isLive(p); if (live) anyLive = true; else anySoon = true;
-      var img = '<img src="' + esc(f.art) + '" width="' + f.w + '" height="' + f.h + '" loading="' + (i ? "lazy" : "eager") + '" decoding="async" alt="' + esc(p.title) + '">' +
+      var img = '<img src="' + esc(f.art) + '" width="' + f.w + '" height="' + f.h + '" loading="' + (i && !pair ? "lazy" : "eager") + '" decoding="async" alt="' + esc(p.title) + '">' +
         '<span class="feat-jp" lang="ja" aria-hidden="true">' + esc(p.jp) + '</span>';
-      return '<article class="feat ' + (i ? "feat-side" : "feat-main") + '">' +
+      return '<article class="feat ' + (pair ? "feat-main feat-pair" : i ? "feat-side" : "feat-main") + '">' +
         (live ? '<a class="feat-art" href="' + esc(p.url) + '" tabindex="-1" aria-hidden="true">' + img + '</a>' : '<div class="feat-art">' + img + '</div>') +
         '<div class="feat-cap">' +
           '<p class="label-shu">' + esc(f.kicker) + '</p>' +
-          '<h3>' + esc(p.name) + '</h3>' + (live ? '<span class="price">$' + p.price + '</span>' : '') +
+          '<h3>' + esc(p.name) + (pair && p.oc && p.oc !== p.name ? ' <span class="feat-oc">· ' + esc(p.oc) + '</span>' : '') + '</h3>' + (live ? '<span class="price">$' + p.price + '</span>' : '') +
           '<p class="feat-tag">' + esc(f.tagline) + '</p>' +
           '<p class="hook">' + esc(f.blurb) + '</p>' +
           '<div class="feat-cta">' + (live
@@ -48,8 +48,16 @@
             : '<span class="drop-badge"><span lang="ja">近日</span> Dropping today</span>') + '</div>' +
         '</div></article>';
     }).join("");
+    return { html: html, anySoon: anySoon, anyLive: anyLive };
+  }
+  var DELUXE = window.UE11_DELUXE || [], deluxeEl = $("deluxe");
+  if (deluxeEl && DELUXE.length) deluxeEl.innerHTML = featureHtml(DELUXE, true).html;
+  var FEAT = window.UE11_FEATURE || [], featEl = $("feature");
+  if (featEl && FEAT.length) {
+    var fr = featureHtml(FEAT, false);
+    featEl.innerHTML = fr.html;
     var st = document.querySelector("[data-feature-state]");
-    if (st) st.textContent = anySoon ? (anyLive ? "· live & dropping today" : "drop today") : "· live now";
+    if (st) st.textContent = fr.anySoon ? (fr.anyLive ? "· live & dropping today" : "drop today") : "· live now";
   }
 
   /* ── filters ── */
@@ -67,7 +75,7 @@
   /* ── live grid, closed by one end tile (coming soon, or a way back to the shop) ── */
   var grid = $("grid"), shown = LIVE.slice();
   function lineName(p) { return (LINES[p.line] || {}).name || ""; }
-  function ocHtml(p) { return p.oc ? "Starring " + esc(p.oc) + (p.line === "samurai" ? '<span lang="ja">' + esc(p.jp) + "</span>" : "") : ""; }
+  function ocHtml(p) { return p.oc ? "Starring " + esc(p.oc) + (p.line === "samurai" || p.line === "story" ? '<span lang="ja">' + esc(p.jp) + "</span>" : "") : ""; }
   function liveCard(p, i) {
     return '<article class="card" style="--i:' + i + ';--tilt:' + (i % 2 ? 1.6 : -1.6) + 'deg">' +
       '<button class="card-art" type="button" data-slug="' + p.slug + '" aria-label="Details and samples: ' + esc(p.name) + ' (' + esc(p.title) + ')">' +
@@ -76,7 +84,7 @@
       '</button>' +
       '<div class="card-cap">' +
         '<p class="label-shu">' + esc(lineName(p)) + '</p>' +
-        '<h3>' + esc(p.name) + (p.line === "samurai" && p.jp ? '<span class="h3-jp" lang="ja">' + esc(p.jp) + '</span>' : '') + '</h3><span class="price">$' + p.price + '</span>' +
+        '<h3>' + esc(p.name) + ((p.line === "samurai" || p.line === "story") && p.jp ? '<span class="h3-jp" lang="ja">' + esc(p.jp) + '</span>' : '') + '</h3><span class="price">$' + p.price + '</span>' +
         (p.oc && p.name !== p.oc ? '<p class="oc">' + ocHtml(p) + '</p>' : '') +
         '<p class="hook">' + esc(p.hook) + '</p>' +
         '<a class="card-buy" href="' + esc(p.url) + '">Get it on Gumroad <span aria-hidden="true">→</span></a>' +
@@ -117,7 +125,7 @@
   /* ── lightbox ── */
   var lb = $("lightbox"), cur = 0;
   /* the gallery art's ground colour per line (tools/build_art.py BG), so the full-height image column has no seam */
-  var ART_BG = { samurai: "#14110e", kawaii: "#f0e9db", yokai: "#181b38", halloween: "#160e1c", stream: "#0e1a1c" };
+  var ART_BG = { story: "#15121f", samurai: "#14110e", kawaii: "#f0e9db", yokai: "#181b38", halloween: "#160e1c", stream: "#0e1a1c" };
   function openAt(idx) {
     if (!shown.length) return;
     cur = (idx + shown.length) % shown.length;

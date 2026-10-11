@@ -14,6 +14,7 @@
  */
 window.UE11_SHOP = "https://unifiedenergy11.gumroad.com";
 window.UE11_LINES = {
+  story:     { name: "Story Packs", jp: "物語" },
   samurai:   { name: "Samurai", jp: "侍" },
   kawaii:    { name: "Kawaii", jp: "可愛い" },
   yokai:     { name: "Yokai & Animals", jp: "妖" },
@@ -21,6 +22,22 @@ window.UE11_LINES = {
   stream:    { name: "Stream & Emotes", jp: "配信" }
 };
 window.UE11_PRODUCTS = [
+  {
+    slug: "shion-twilight-bridge", status: "live", url: "https://unifiedenergy11.gumroad.com/l/shion-twilight-bridge",
+    name: "Twilight Bridge", title: "Shion of the Twilight Bridge: Deluxe Story Pack", oc: "Shion", jp: "紫苑", line: "story", price: 24,
+    hook: "A twilight-violet story pack: a prologue comic, an illustrated storybook, 32 chibi stickers, 12 emotes, a living wallpaper and a stream kit.",
+    art: "assets/gallery/shion-twilight-bridge.webp",
+    sampleKind: "emote", samples: ["assets/emotes/shion-twilight-bridge/hype.png", "assets/emotes/shion-twilight-bridge/heart.png", "assets/emotes/shion-twilight-bridge/lantern.png", "assets/emotes/shion-twilight-bridge/rain.png"],
+    contents: ["4 Shion key illustrations, each at full resolution, 2x upscale, 4K desktop and 9:16 phone crops", "Prologue comic “The River Doesn’t Hurry / 川は急がない”: print-ready A4 at 300 dpi, PDF and 1080x1920 phone version", "Illustrated storybook PDF (prologue + 5 chapters) and story.md", "Brush-signature portrait (2560x3840) with a 紫苑 brush signature and hanko seal, plus a 4K crop", "32 chibi die-cut stickers + printable A4 sticker sheet (PNG and PDF)", "12 emotes: Twitch 112/56/28 px + Discord 128 px", "4 screensaver scenes (1080p + 4K) and 3 phone wallpapers", "Living wallpaper: seamless loops at 1920x1080 and 1080x1920, plus a 4K MP4 for Wallpaper Engine", "Twilight Stream Kit: Starting Soon, BRB and Ending screens (PNG + looping MP4), webcam frame, chat box frame, panel headers", "Japanese autograph set: calligraphy card, tategaki letter sheet, hanko and brush-signature overlays", "Bonus: a 12-second animated twilight moment with piano", "README and LICENSE"]
+  },
+  {
+    slug: "zero-neon-ronin", status: "live", url: "https://unifiedenergy11.gumroad.com/l/zero-neon-ronin",
+    name: "Neon Ronin Chronicle", title: "Zero-Blade: Neon Ronin Chronicle: Deluxe Story Pack", oc: "Zero-Blade", jp: "零", line: "story", price: 24,
+    hook: "One night of neon rain, drone swarms and an iron oni: a prologue comic, a storybook, 6 battle scenes, 32 chibi stickers, 12 emotes and a stream kit.",
+    art: "assets/gallery/zero-neon-ronin.webp",
+    sampleKind: "emote", samples: ["assets/emotes/zero-neon-ronin/hype.png", "assets/emotes/zero-neon-ronin/cool.png", "assets/emotes/zero-neon-ronin/hack.png", "assets/emotes/zero-neon-ronin/salute.png"],
+    contents: ["Prologue comic “Count From Zero / ゼロから” in English and Japanese: print-ready A4 at 300 dpi, PDF and 1080x1920 phone version", "Illustrated storybook PDF (prologue + 5 chapters) and story.md", "6 battle scenes at 1080p and 4K: drone swarm, mech oni, rooftop duel, neon alley, train-top fight, final stand at dawn", "Brush-signature portrait (2560x3840) with a ゼロ brush signature and 零刃之印 hanko seal, plus a 4K version", "32 chibi die-cut stickers + printable A4 sticker sheet (PNG and PDF)", "12 emotes: Twitch 112/56/28 px + Discord 128 px", "3 phone wallpapers (1290x2796)", "Living wallpaper: neon-rain loops at 1920x1080 and 1080x1920, plus a 4K MP4 for Wallpaper Engine", "Cyber Stream Kit: Starting Soon, BRB and Ending screens (PNG + looping MP4), webcam frame, chat box frame, panel headers", "Japanese autograph set: calligraphy card, letter sheet, hanko and brush-signature overlays", "Bonus: the Zero-Blade battle trailer in 16:9 and 9:16 cuts", "README and LICENSE"]
+  },
   {
     slug: "samurai-emotions-rei", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-emotions-rei",
     name: "Rei", title: "UE11 Samurai Emotions: Rei", oc: "Rei", jp: "玲", line: "samurai", price: 15,
@@ -183,4 +200,13 @@ window.UE11_FEATURE = [
   { slug: "kabocha-ronin", art: "assets/gallery/kabocha-ronin.webp", w: 800, h: 800,
     kicker: "Halloween samurai", tagline: "Jinpachi, the jack-o'-lantern ronin",
     blurb: "26 emotes of a ronin behind a pumpkin mask, plus 4K yokai battle scenes." }
+];
+/* Newest deluxe story packs, shown in their own highlight above Halloween (app.js renders it into #deluxe). */
+window.UE11_DELUXE = [
+  { slug: "shion-twilight-bridge", art: "assets/feature/shion-twilight-bridge-dusk.webp", w: 1600, h: 900,
+    kicker: "New · deluxe story pack", tagline: "「君を忘れない」 I will not forget you.",
+    blurb: "Every evening on an old iron bridge at dusk, Shion remembers everyone who crosses. A prologue comic, a storybook, a brush-signature portrait, 32 chibi stickers, 12 emotes, a living wallpaper and a twilight stream kit." },
+  { slug: "zero-neon-ronin", art: "assets/feature/zero-neon-ronin-drone-swarm.webp", w: 1600, h: 900,
+    kicker: "New · deluxe story pack", tagline: "He woke with no name, only a number: 00.",
+    blurb: "Zero-Blade cuts through one night of neon rain, drone swarms and an iron oni. A prologue comic, a storybook, 6 battle scenes, a brush-signature portrait, 32 chibi stickers, 12 emotes and a cyber stream kit." }
 ];
