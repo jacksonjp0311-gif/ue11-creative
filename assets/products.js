@@ -15,6 +15,7 @@
 window.UE11_SHOP = "https://unifiedenergy11.gumroad.com";
 window.UE11_LINES = {
   story:     { name: "Story Packs", jp: "物語" },
+  entry:     { name: "Badges & Wallpapers", jp: "章" },
   samurai:   { name: "Samurai", jp: "侍" },
   kawaii:    { name: "Kawaii", jp: "可愛い" },
   yokai:     { name: "Yokai & Animals", jp: "妖" },
@@ -39,8 +40,65 @@ window.UE11_PRODUCTS = [
     contents: ["Prologue comic “Count From Zero / ゼロから” in English and Japanese: print-ready A4 at 300 dpi, PDF and 1080x1920 phone version", "Illustrated storybook PDF (prologue + 5 chapters) and story.md", "6 battle scenes at 1080p and 4K: drone swarm, mech oni, rooftop duel, neon alley, train-top fight, final stand at dawn", "Brush-signature portrait (2560x3840) with a ゼロ brush signature and 零刃之印 hanko seal, plus a 4K version", "32 chibi die-cut stickers + printable A4 sticker sheet (PNG and PDF)", "12 emotes: Twitch 112/56/28 px + Discord 128 px", "3 phone wallpapers (1290x2796)", "Living wallpaper: neon-rain loops at 1920x1080 and 1080x1920, plus a 4K MP4 for Wallpaper Engine", "Cyber Stream Kit: Starting Soon, BRB and Ending screens (PNG + looping MP4), webcam frame, chat box frame, panel headers", "Japanese autograph set: calligraphy card, letter sheet, hanko and brush-signature overlays", "Bonus: the Zero-Blade battle trailer in 16:9 and 9:16 cuts", "README and LICENSE"]
   },
   {
+    slug: "free-starter-kit", status: "live", url: "https://unifiedenergy11.gumroad.com/l/free-twitch-emotes-starter-kit",
+    name: "Free Starter Kit", title: "Free Anime Twitch Emotes + Sub Badges Starter Kit | Zero-Blade", oc: "Zero-Blade", jp: "零", line: "entry", price: 0,
+    hook: "6 Twitch & Discord emotes + 6 sub badges, upload-ready. Free.",
+    art: "assets/gallery/free-starter-kit.webp",
+    sampleKind: "emote", samples: ["assets/emotes/free-starter-kit/gg.png", "assets/emotes/free-starter-kit/hype.png", "assets/emotes/free-starter-kit/sleepy.png", "assets/emotes/free-starter-kit/love.png"],
+    contents: ["6 emotes: Twitch 112/56/28 px + Discord 128 px (Zero-Blade gg, hype, lol, shock; Shion sleepy; Kabocha Ronin love)", "6 sub badges for months 1, 2, 3, 6, 9 and 12 at 72/36/18 px (Zero's charge-up ring)", "START-HERE upload guide", "README and LICENSE"]
+  },
+  {
+    slug: "cyber-samurai-badges", status: "live", url: "https://unifiedenergy11.gumroad.com/l/cyber-samurai-sub-badges-zero-blade",
+    name: "Cyber Samurai Badges", title: "12 Cyber Samurai Twitch Sub Badges & Bit Badges | Zero-Blade", oc: "Zero-Blade", jp: "零", line: "entry", price: 5,
+    hook: "12 neon cyber-samurai sub + bit badges, 72/36/18 px.",
+    art: "assets/gallery/cyber-samurai-badges.webp",
+    sampleKind: "emote", samples: ["assets/emotes/cyber-samurai-badges/month-01.png", "assets/emotes/cyber-samurai-badges/month-03.png", "assets/emotes/cyber-samurai-badges/month-06.png", "assets/emotes/cyber-samurai-badges/month-12.png"],
+    contents: ["6 sub badges (1, 2, 3, 6, 9, 12 months) at 72/36/18 px", "6 bit badges (1, 100, 1k, 5k, 10k, 100k) at 72/36/18 px", "Transparent PNGs designed for small sizes on light and dark chat", "START-HERE upload guide", "README and LICENSE"]
+  },
+  {
+    slug: "samurai-badges", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-twitch-sub-badges",
+    name: "Samurai Badges", title: "12 Samurai Twitch Sub Badges & Bit Badges | UE11", oc: "", jp: "侍", line: "entry", price: 5,
+    hook: "12 samurai sub + bit badges, 72/36/18 px.",
+    art: "assets/gallery/samurai-badges.webp",
+    sampleKind: "emote", samples: ["assets/emotes/samurai-badges/month-01.png", "assets/emotes/samurai-badges/month-03.png", "assets/emotes/samurai-badges/month-06.png", "assets/emotes/samurai-badges/month-12.png"],
+    contents: ["6 sub badges (1, 2, 3, 6, 9, 12 months) at 72/36/18 px", "6 bit badges (1, 100, 1k, 5k, 10k, 100k) at 72/36/18 px", "Transparent PNGs designed for small sizes on light and dark chat", "START-HERE upload guide", "README and LICENSE"]
+  },
+  {
+    slug: "yokai-badges", status: "live", url: "https://unifiedenergy11.gumroad.com/l/yokai-twitch-sub-badges",
+    name: "Yokai Badges", title: "12 Yokai Twitch Sub Badges & Bit Badges | UE11", oc: "", jp: "妖", line: "entry", price: 5,
+    hook: "12 yokai sub + bit badges, 72/36/18 px.",
+    art: "assets/gallery/yokai-badges.webp",
+    sampleKind: "emote", samples: ["assets/emotes/yokai-badges/month-01.png", "assets/emotes/yokai-badges/month-03.png", "assets/emotes/yokai-badges/month-06.png", "assets/emotes/yokai-badges/month-12.png"],
+    contents: ["6 sub badges (1, 2, 3, 6, 9, 12 months) at 72/36/18 px", "6 bit badges (1, 100, 1k, 5k, 10k, 100k) at 72/36/18 px", "Transparent PNGs designed for small sizes on light and dark chat", "START-HERE upload guide", "README and LICENSE"]
+  },
+  {
+    slug: "neon-ronin-rain", status: "live", url: "https://unifiedenergy11.gumroad.com/l/neon-ronin-rain-live-wallpaper",
+    name: "Neon Ronin Rain", title: "Anime Live Wallpaper 4K | Neon Ronin Rain | Desktop & Phone", oc: "Zero-Blade", jp: "零", line: "entry", price: 8,
+    hook: "Seamless 4K + 1080p + phone loop of Zero-Blade in the neon rain, plus stills.",
+    art: "assets/gallery/neon-ronin-rain.webp",
+    sampleKind: "thumb", samples: ["assets/samples/neon-ronin-rain/desktop.webp", "assets/samples/neon-ronin-rain/phone.webp", "assets/samples/neon-ronin-rain/cover.webp"],
+    contents: ["4K (3840×2160) seamless MP4 loop for Wallpaper Engine", "1080p (1920×1080) seamless MP4 loop", "Phone 9:16 (1080×1920) seamless MP4 loop", "4K desktop still + phone still", "START-HERE guide for Wallpaper Engine, Lively, Android, iPhone and OBS", "README and LICENSE"]
+  },
+  {
+    slug: "twilight-bridge-wallpaper", status: "live", url: "https://unifiedenergy11.gumroad.com/l/twilight-bridge-live-wallpaper",
+    name: "Twilight Bridge Wallpaper", title: "Anime Live Wallpaper 4K | Twilight Bridge | Desktop & Phone", oc: "Shion", jp: "紫苑", line: "entry", price: 7,
+    hook: "Seamless 4K + 1080p + phone loop of Shion on the twilight bridge, plus stills.",
+    art: "assets/gallery/twilight-bridge-wallpaper.webp",
+    sampleKind: "thumb", samples: ["assets/samples/twilight-bridge-wallpaper/desktop.webp", "assets/samples/twilight-bridge-wallpaper/phone.webp", "assets/samples/twilight-bridge-wallpaper/cover.webp"],
+    contents: ["4K (3840×2160) seamless MP4 loop for Wallpaper Engine", "1080p (1920×1080) seamless MP4 loop", "Phone 9:16 (1080×1920) seamless MP4 loop", "4K desktop still + phone still", "START-HERE guide for Wallpaper Engine, Lively, Android, iPhone and OBS", "README and LICENSE"]
+  },
+  {
+    slug: "hyakki-night-parade", status: "live", url: "https://unifiedenergy11.gumroad.com/l/hyakki-night-parade-live-wallpaper",
+    name: "Hyakki Night Parade", title: "Anime Halloween Live Wallpaper 4K | Hyakki Night Parade | Desktop & Phone", oc: "Rei", jp: "玲", line: "entry", price: 6,
+    hook: "Seamless 4K + 1080p + phone loop of Rei holding the shrine stairs, plus stills.",
+    art: "assets/gallery/hyakki-night-parade.webp",
+    sampleKind: "thumb", samples: ["assets/samples/hyakki-night-parade/desktop.webp", "assets/samples/hyakki-night-parade/phone.webp", "assets/samples/hyakki-night-parade/cover.webp"],
+    contents: ["4K (3840×2160) seamless MP4 loop for Wallpaper Engine", "1080p (1920×1080) seamless MP4 loop", "Phone 9:16 (1080×1920) seamless MP4 loop", "4K desktop still + phone still", "START-HERE guide for Wallpaper Engine, Lively, Android, iPhone and OBS", "README and LICENSE"]
+  },
+
+  {
     slug: "samurai-emotions-rei", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-emotions-rei",
-    name: "Rei", title: "UE11 Samurai Emotions: Rei", oc: "Rei", jp: "玲", line: "samurai", price: 15,
+    name: "Rei", title: "UE11 Samurai Emotions: Rei", oc: "Rei", jp: "玲", line: "samurai", price: 9, wasPrice: 15,
     hook: "24 emotes of a calm woman samurai OC with a crimson streak, plus battle wallpapers.",
     art: "assets/gallery/samurai-emotions-rei.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-emotions-rei/hype.png", "assets/emotes/samurai-emotions-rei/gg.png", "assets/emotes/samurai-emotions-rei/lul.png", "assets/emotes/samurai-emotions-rei/love.png"],
@@ -48,7 +106,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "samurai-emotions-aoi", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-emotions",
-    name: "Aoi", title: "UE11 Samurai Emotions", oc: "Aoi", jp: "蒼", line: "samurai", price: 15,
+    name: "Aoi", title: "UE11 Samurai Emotions", oc: "Aoi", jp: "蒼", line: "samurai", price: 9, wasPrice: 15,
     hook: "24 emotes of Aoi, a cobalt-eyed samurai OC, plus battle wallpapers.",
     art: "assets/gallery/samurai-emotions-aoi.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-emotions-aoi/hype.png", "assets/emotes/samurai-emotions-aoi/gg.png", "assets/emotes/samurai-emotions-aoi/lul.png", "assets/emotes/samurai-emotions-aoi/love.png"],
@@ -56,7 +114,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "samurai-demon-kurogane", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-demon-kurogane",
-    name: "Kurogane", title: "Kurogane Samurai Emote Pack", oc: "Kurogane", jp: "黒鉄", line: "samurai", price: 15,
+    name: "Kurogane", title: "Kurogane Samurai Emote Pack", oc: "Kurogane", jp: "黒鉄", line: "samurai", price: 9, wasPrice: 15,
     hook: "24 emotes of a steel-eyed human demon-fighter, plus 4 battle wallpapers.",
     art: "assets/gallery/samurai-demon-kurogane.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-demon-kurogane/hype.png", "assets/emotes/samurai-demon-kurogane/gg.png", "assets/emotes/samurai-demon-kurogane/lul.png", "assets/emotes/samurai-demon-kurogane/love.png"],
@@ -64,7 +122,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "samurai-cyber-zero", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-cyber-zero",
-    name: "Zero-Blade", title: "Zero-Blade Cyber Samurai Emote Pack", oc: "Zero-Blade", jp: "零", line: "samurai", price: 15,
+    name: "Zero-Blade", title: "Zero-Blade Cyber Samurai Emote Pack", oc: "Zero-Blade", jp: "零", line: "samurai", price: 9, wasPrice: 15,
     hook: "24 emotes of a neon cyber samurai, plus 4 rain-soaked battle wallpapers.",
     art: "assets/gallery/samurai-cyber-zero.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-cyber-zero/hype.png", "assets/emotes/samurai-cyber-zero/gg.png", "assets/emotes/samurai-cyber-zero/lul.png", "assets/emotes/samurai-cyber-zero/love.png"],
@@ -72,7 +130,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "sushi-pack", status: "live", url: "https://unifiedenergy11.gumroad.com/l/sushi-pack",
-    name: "Sushi", title: "UE11 Sushi Pack", oc: "", jp: "寿司", line: "kawaii", price: 12,
+    name: "Sushi", title: "UE11 Sushi Pack", oc: "", jp: "寿司", line: "kawaii", price: 9, wasPrice: 12,
     hook: "24 kawaii sushi critters as die-cut stickers and emotes, plus cozy scenes.",
     art: "assets/gallery/sushi-pack.webp",
     sampleKind: "emote", samples: ["assets/emotes/sushi-pack/salmon-nigiri.png", "assets/emotes/sushi-pack/wasabi-blob.png", "assets/emotes/sushi-pack/egg-tamago.png", "assets/emotes/sushi-pack/tuna-nigiri.png"],
@@ -80,7 +138,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "soup-ramen-pack", status: "live", url: "https://unifiedenergy11.gumroad.com/l/soup-ramen-pack",
-    name: "Soup & Ramen", title: "Soup & Ramen Kawaii Sticker Pack", oc: "", jp: "ラーメン", line: "kawaii", price: 12,
+    name: "Soup & Ramen", title: "Soup & Ramen Kawaii Sticker Pack", oc: "", jp: "ラーメン", line: "kawaii", price: 9, wasPrice: 12,
     hook: "15 ramen, gyoza and miso critters, plus cozy counter screensavers.",
     art: "assets/gallery/soup-ramen-pack.webp",
     sampleKind: "emote", samples: ["assets/emotes/soup-ramen-pack/ramen-bowl.png", "assets/emotes/soup-ramen-pack/gyoza.png", "assets/emotes/soup-ramen-pack/takoyaki.png", "assets/emotes/soup-ramen-pack/dumpling-trio.png"],
@@ -88,7 +146,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "kitsune-ember-seal", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kitsune-ember-seal",
-    name: "Kitsune", title: "Kitsune Ember Seal Emote Pack", oc: "", jp: "狐", line: "yokai", price: 17,
+    name: "Kitsune", title: "Kitsune Ember Seal Emote Pack", oc: "", jp: "狐", line: "yokai", price: 9, wasPrice: 17,
     hook: "24 emotes of an ember fox spirit, plus shrine screensavers and a 狐 seal set.",
     art: "assets/gallery/kitsune-ember-seal.webp",
     sampleKind: "emote", samples: ["assets/emotes/kitsune-ember-seal/hype.png", "assets/emotes/kitsune-ember-seal/gg.png", "assets/emotes/kitsune-ember-seal/lul.png", "assets/emotes/kitsune-ember-seal/love.png"],
@@ -96,7 +154,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "oni-pulse-mask", status: "live", url: "https://unifiedenergy11.gumroad.com/l/oni-pulse-mask",
-    name: "Oni", title: "Oni Pulse Mask Emote Pack", oc: "", jp: "鬼", line: "yokai", price: 19,
+    name: "Oni", title: "Oni Pulse Mask Emote Pack", oc: "", jp: "鬼", line: "yokai", price: 9, wasPrice: 19,
     hook: "16 horned oni-mask emotes, plus temple scenes and battle wallpapers.",
     art: "assets/gallery/oni-pulse-mask.webp",
     sampleKind: "emote", samples: ["assets/emotes/oni-pulse-mask/hype.png", "assets/emotes/oni-pulse-mask/gg.png", "assets/emotes/oni-pulse-mask/lul.png", "assets/emotes/oni-pulse-mask/love.png"],
@@ -104,7 +162,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "chochin-lantern-ghost", status: "live", url: "https://unifiedenergy11.gumroad.com/l/chochin-lantern-ghost",
-    name: "Chōchin", title: "Halloween Kawaii Ghost Twitch Emotes & Discord Stickers | Chochi Lantern OC", oc: "Chochi", jp: "提灯", line: "halloween", price: 14,
+    name: "Chōchin", title: "Halloween Kawaii Ghost Twitch Emotes & Discord Stickers | Chochi Lantern OC", oc: "Chochi", jp: "提灯", line: "halloween", price: 9, wasPrice: 14,
     hook: "16 mood-glow lantern-ghost emotes, soft Halloween scenes, bonus stickers and Twitch sub badges.",
     art: "assets/gallery/chochin-lantern-ghost.webp",
     sampleKind: "emote", samples: ["assets/emotes/chochin-lantern-ghost/hype.png", "assets/emotes/chochin-lantern-ghost/gg.png", "assets/emotes/chochin-lantern-ghost/lul.png", "assets/emotes/chochin-lantern-ghost/love.png"],
@@ -112,7 +170,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "komori-candy-bat", status: "live", url: "https://unifiedenergy11.gumroad.com/l/komori-candy-bat",
-    name: "Komori", title: "Halloween Kawaii Bat Twitch Emotes & Discord Stickers | Komori Candy Bat OC", oc: "Komori", jp: "蝙蝠", line: "halloween", price: 14,
+    name: "Komori", title: "Halloween Kawaii Bat Twitch Emotes & Discord Stickers | Komori Candy Bat OC", oc: "Komori", jp: "蝙蝠", line: "halloween", price: 9, wasPrice: 14,
     hook: "16 candy-bat emotes in hang and upright poses, soft night scenes, bonus stickers and Twitch sub badges.",
     art: "assets/gallery/komori-candy-bat.webp",
     sampleKind: "emote", samples: ["assets/emotes/komori-candy-bat/hype.png", "assets/emotes/komori-candy-bat/gg.png", "assets/emotes/komori-candy-bat/lul.png", "assets/emotes/komori-candy-bat/love.png"],
@@ -120,7 +178,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "origami-friends", status: "live", url: "https://unifiedenergy11.gumroad.com/l/origami-friends",
-    name: "Origami", title: "Origami Friends Kawaii Sticker Pack", oc: "", jp: "折り紙", line: "kawaii", price: 12,
+    name: "Origami", title: "Origami Friends Kawaii Sticker Pack", oc: "", jp: "折り紙", line: "kawaii", price: 9, wasPrice: 12,
     hook: "11 folded-paper crane, fox, bunny, cat and frog stickers, plus picnic scenes.",
     art: "assets/gallery/origami-friends.webp",
     sampleKind: "emote", samples: ["assets/emotes/origami-friends/crane-love.png", "assets/emotes/origami-friends/fox-happy.png", "assets/emotes/origami-friends/cat-love.png", "assets/emotes/origami-friends/bunny-sleep.png"],
@@ -136,7 +194,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "emote-lab-vol1", status: "live", url: "https://unifiedenergy11.gumroad.com/l/emote-lab-vol1",
-    name: "Emote Lab", title: "UE11 Emote Lab Vol.1", oc: "Pip", jp: "絵文字", line: "stream", price: 19,
+    name: "Emote Lab", title: "UE11 Emote Lab Vol.1", oc: "Pip", jp: "絵文字", line: "stream", price: 9, wasPrice: 19,
     hook: "24 Twitch and Discord emotes starring Pip, an original pastel critter.",
     art: "assets/gallery/emote-lab-vol1.webp",
     sampleKind: "emote", samples: ["assets/emotes/emote-lab-vol1/hype.png", "assets/emotes/emote-lab-vol1/gg.png", "assets/emotes/emote-lab-vol1/lul.png", "assets/emotes/emote-lab-vol1/love.png"],
@@ -176,7 +234,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "kabocha-ronin", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kabocha-ronin",
-    name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 19,
+    name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 9, wasPrice: 19,
     hook: "26 emotes of Jinpachi, a jack-o'-lantern-masked ronin, plus 4K yokai battle scenes.",
     art: "assets/gallery/kabocha-ronin.webp",
     sampleKind: "emote", samples: ["assets/emotes/kabocha-ronin/hype.png", "assets/emotes/kabocha-ronin/boo.png", "assets/emotes/kabocha-ronin/lurk.png", "assets/emotes/kabocha-ronin/heart_eyes.png"],
@@ -210,3 +268,12 @@ window.UE11_DELUXE = [
     kicker: "New · deluxe story pack", tagline: "He woke with no name, only a number: 00.",
     blurb: "Zero-Blade cuts through one night of neon rain, drone swarms and an iron oni. A prologue comic, a storybook, 6 battle scenes, a brush-signature portrait, 32 chibi stickers, 12 emotes and a cyber stream kit." }
 ];
+
+/* Start-free callout near the top (app.js renders it into #start-free). */
+window.UE11_START_FREE = {
+  slug: "free-starter-kit",
+  art: "assets/gallery/free-starter-kit.webp",
+  kicker: "Start free",
+  tagline: "Fill your first emote and badge slots today.",
+  blurb: "6 Twitch & Discord emotes and 6 sub badges starring Zero-Blade, Shion and Kabocha Ronin. Upload-ready PNGs, pay what you want (or $0)."
+};

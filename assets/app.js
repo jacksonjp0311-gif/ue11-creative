@@ -7,17 +7,30 @@
   var finePointer = window.matchMedia("(pointer: fine)").matches;
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function priceHtml(p) {
+    if (!p.price) return '<span class="price price-free">Free</span>';
+    if (p.wasPrice && p.wasPrice > p.price) {
+      return '<span class="price"><s class="was">$' + p.wasPrice + '</s> $' + p.price + '</span>';
+    }
+    return '<span class="price">$' + p.price + '</span>';
+  }
+  function priceText(p) {
+    if (!p.price) return "Free";
+    if (p.wasPrice && p.wasPrice > p.price) return "$" + p.price + " (was $" + p.wasPrice + ")";
+    return "$" + p.price;
+  }
+  function buyLabel(p) { return p.price ? "Get it on Gumroad" : "Get it free on Gumroad"; }
   function isLive(p) { return p.status === "live" && /^https:\/\/unifiedenergy11\.gumroad\.com\/l\//.test(p.url || ""); }
 
   var LIVE = ALL.filter(isLive), SOON = ALL.filter(function (p) { return !isLive(p); });
-  var WORDS = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"];
+  var WORDS = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty", "Twenty-one", "Twenty-two", "Twenty-three", "Twenty-four", "Twenty-five", "Twenty-six", "Twenty-seven", "Twenty-eight", "Twenty-nine", "Thirty"];
   function word(n) { return WORDS[n] || String(n); }
 
   /* ── counts, all derived from products.js ── */
   var counts = {
     "live-words": word(LIVE.length), "live-words-lc": word(LIVE.length),
     "soon-words": word(SOON.length),
-    "min-price": LIVE.length ? Math.min.apply(null, LIVE.map(function (p) { return p.price; })) : ""
+    "min-price": (function () { var paid = LIVE.filter(function (p) { return p.price > 0; }); return paid.length ? Math.min.apply(null, paid.map(function (p) { return p.price; })) : "0"; })()
   };
   document.querySelectorAll("[data-count]").forEach(function (el) { el.textContent = counts[el.dataset.count]; });
   document.querySelectorAll("[data-line-count]").forEach(function (el) {
@@ -40,11 +53,11 @@
         (live ? '<a class="feat-art" href="' + esc(p.url) + '" tabindex="-1" aria-hidden="true">' + img + '</a>' : '<div class="feat-art">' + img + '</div>') +
         '<div class="feat-cap">' +
           '<p class="label-shu">' + esc(f.kicker) + '</p>' +
-          '<h3>' + esc(p.name) + (pair && p.oc && p.oc !== p.name ? ' <span class="feat-oc">· ' + esc(p.oc) + '</span>' : '') + '</h3>' + (live ? '<span class="price">$' + p.price + '</span>' : '') +
+          '<h3>' + esc(p.name) + (pair && p.oc && p.oc !== p.name ? ' <span class="feat-oc">· ' + esc(p.oc) + '</span>' : '') + '</h3>' + (live ? priceHtml(p) : '') +
           '<p class="feat-tag">' + esc(f.tagline) + '</p>' +
           '<p class="hook">' + esc(f.blurb) + '</p>' +
           '<div class="feat-cta">' + (live
-            ? '<a class="card-buy" href="' + esc(p.url) + '">Get it on Gumroad <span aria-hidden="true">→</span></a>'
+            ? '<a class="card-buy" href="' + esc(p.url) + '">' + buyLabel(p) + ' <span aria-hidden="true">→</span></a>'
             : '<span class="drop-badge"><span lang="ja">近日</span> Dropping today</span>') + '</div>' +
         '</div></article>';
     }).join("");
@@ -58,6 +71,25 @@
     featEl.innerHTML = fr.html;
     var st = document.querySelector("[data-feature-state]");
     if (st) st.textContent = fr.anySoon ? (fr.anyLive ? "· live & dropping today" : "drop today") : "· live now";
+  }
+
+  /* ── start free callout ── */
+  var SF = window.UE11_START_FREE, sfEl = $("start-free");
+  if (SF && sfEl) {
+    var sfp = ALL.filter(function (q) { return q.slug === SF.slug; })[0];
+    if (sfp && isLive(sfp)) {
+      sfEl.innerHTML =
+        '<a class="start-art" href="' + esc(sfp.url) + '" tabindex="-1" aria-hidden="true">' +
+          '<img src="' + esc(SF.art) + '" width="800" height="800" fetchpriority="high" decoding="async" alt="' + esc(sfp.title) + '">' +
+        '</a>' +
+        '<div class="start-cap">' +
+          '<p class="label-shu">' + esc(SF.kicker) + '</p>' +
+          '<h3>' + esc(sfp.name) + '</h3>' + priceHtml(sfp) +
+          '<p class="feat-tag">' + esc(SF.tagline) + '</p>' +
+          '<p class="hook">' + esc(SF.blurb) + '</p>' +
+          '<div class="feat-cta"><a class="card-buy" href="' + esc(sfp.url) + '">' + buyLabel(sfp) + ' <span aria-hidden="true">→</span></a></div>' +
+        '</div>';
+    }
   }
 
   /* ── filters ── */
@@ -84,10 +116,10 @@
       '</button>' +
       '<div class="card-cap">' +
         '<p class="label-shu">' + esc(lineName(p)) + '</p>' +
-        '<h3>' + esc(p.name) + ((p.line === "samurai" || p.line === "story") && p.jp ? '<span class="h3-jp" lang="ja">' + esc(p.jp) + '</span>' : '') + '</h3><span class="price">$' + p.price + '</span>' +
+        '<h3>' + esc(p.name) + ((p.line === "samurai" || p.line === "story") && p.jp ? '<span class="h3-jp" lang="ja">' + esc(p.jp) + '</span>' : '') + '</h3>' + priceHtml(p) +
         (p.oc && p.name !== p.oc ? '<p class="oc">' + ocHtml(p) + '</p>' : '') +
         '<p class="hook">' + esc(p.hook) + '</p>' +
-        '<a class="card-buy" href="' + esc(p.url) + '">Get it on Gumroad <span aria-hidden="true">→</span></a>' +
+        '<a class="card-buy" href="' + esc(p.url) + '">' + buyLabel(p) + ' <span aria-hidden="true">→</span></a>' +
       '</div></article>';
   }
   function endTile(soonList) {
@@ -125,7 +157,7 @@
   /* ── lightbox ── */
   var lb = $("lightbox"), cur = 0;
   /* the gallery art's ground colour per line (tools/build_art.py BG), so the full-height image column has no seam */
-  var ART_BG = { story: "#15121f", samurai: "#14110e", kawaii: "#f0e9db", yokai: "#181b38", halloween: "#160e1c", stream: "#0e1a1c" };
+  var ART_BG = { story: "#15121f", entry: "#12151c", samurai: "#14110e", kawaii: "#f0e9db", yokai: "#181b38", halloween: "#160e1c", stream: "#0e1a1c" };
   function openAt(idx) {
     if (!shown.length) return;
     cur = (idx + shown.length) % shown.length;
@@ -136,8 +168,7 @@
     $("lb-title").textContent = p.title;
     $("lb-oc").innerHTML = ocHtml(p); $("lb-oc").hidden = !p.oc;
     $("lb-hook").textContent = p.hook;
-    $("lb-price").textContent = "$" + p.price;
-    $("lb-buy").href = p.url;
+    $("lb-price").innerHTML = priceHtml(p); var buy = $("lb-buy"); if (buy) { buy.href = p.url; var sp = buy.querySelector("span"); if (sp) sp.textContent = buyLabel(p); }
     var emote = p.sampleKind === "emote", box = $("lb-samples");
     $("lb-samples-label").textContent = emote ? "Sample emotes · real 112 px files" : "From the pack";
     box.className = "lb-samples" + (emote ? "" : " thumbs");
