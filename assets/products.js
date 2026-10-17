@@ -209,38 +209,6 @@ window.UE11_PRODUCTS = [
     contents: ["24 emotes: Twitch 112/56/28 px + Discord 128 px (96 PNGs)", "24 high-res masters", "Upload guide, README and LICENSE"]
   },
   {
-    slug: "neko-night-shift", status: "soon", url: "",
-    name: "Neko", title: "Neko Night Shift Emote Pack", oc: "", jp: "猫", line: "yokai", price: 15,
-    hook: "16 emotes of a charcoal night-owl cat, plus neon scenes and a paw hanko.",
-    art: "assets/gallery/neko-night-shift.webp",
-    sampleKind: "emote", samples: ["assets/emotes/neko-night-shift/hype.png", "assets/emotes/neko-night-shift/gg.png", "assets/emotes/neko-night-shift/love.png", "assets/emotes/neko-night-shift/blush.png"],
-    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 screensaver scenes", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
-  },
-  {
-    slug: "shiba-loyalty-pack", status: "soon", url: "",
-    name: "Shiba", title: "Shiba Loyalty Emote Pack", oc: "", jp: "柴", line: "yokai", price: 14,
-    hook: "16 emotes of a red-sesame shiba, plus park scenes and a dog-seal hanko.",
-    art: "assets/gallery/shiba-loyalty-pack.webp",
-    sampleKind: "emote", samples: ["assets/emotes/shiba-loyalty-pack/hype.png", "assets/emotes/shiba-loyalty-pack/gg.png", "assets/emotes/shiba-loyalty-pack/love.png", "assets/emotes/shiba-loyalty-pack/blush.png"],
-    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 screensaver scenes", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
-  },
-  {
-    slug: "dragon-ember-cub", status: "soon", url: "",
-    name: "Dragon", title: "Dragon Ember Cub Emote Pack", oc: "", jp: "龍", line: "yokai", price: 15,
-    hook: "16 emotes of an ember baby dragon, plus cloud and hot-spring scenes.",
-    art: "assets/gallery/dragon-ember-cub.webp",
-    sampleKind: "emote", samples: ["assets/emotes/dragon-ember-cub/hype.png", "assets/emotes/dragon-ember-cub/gg.png", "assets/emotes/dragon-ember-cub/love.png", "assets/emotes/dragon-ember-cub/blush.png"],
-    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 screensaver scenes", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
-  },
-  {
-    slug: "usagi-moon-mail", status: "soon", url: "",
-    name: "Usagi", title: "Usagi Moon Mail Emote Pack", oc: "", jp: "兎", line: "yokai", price: 14,
-    hook: "16 emotes of a moon-courier bunny, plus moonlit scenes and a crescent hanko.",
-    art: "assets/gallery/usagi-moon-mail.webp",
-    sampleKind: "emote", samples: ["assets/emotes/usagi-moon-mail/hype.png", "assets/emotes/usagi-moon-mail/gg.png", "assets/emotes/usagi-moon-mail/love.png", "assets/emotes/usagi-moon-mail/blush.png"],
-    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "2 battle wallpapers", "2 screensaver scenes", "2 soft scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
-  },
-  {
     slug: "kabocha-ronin", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kabocha-ronin",
     name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 9, wasPrice: 19,
     hook: "26 emotes of Jinpachi, a jack-o'-lantern-masked ronin, plus 4K yokai battle scenes.",
