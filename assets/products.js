@@ -193,6 +193,14 @@ window.UE11_PRODUCTS = [
     contents: ["11 emotes: Twitch 112/56/28 px + Discord 128 px (44 PNGs)", "11 transparent sticker PNGs", "11 high-res masters", "2 screensaver scenes", "Brush-signature autograph set: brush-style name art, portrait card, letter sheet, hanko seals", "Upload guide, README and LICENSE"]
   },
   {
+    slug: "yuki-matsuri", status: "live", url: "https://unifiedenergy11.gumroad.com/l/yuki-matsuri",
+    name: "Yuki Matsuri", title: "Winter & New Year Twitch Emotes: 16 Kawaii Emotes + 6 Sub Badges + Cozy Wallpapers | Yuki Matsuri", oc: "Koyuki", jp: "雪祭り", line: "kawaii", price: 12,
+    hook: "16 winter emotes of Koyuki and Yukimaru, 6 sub badges, cozy wallpapers and 2027 New Year overlays.",
+    art: "assets/gallery/yuki-matsuri.webp",
+    sampleKind: "emote", samples: ["assets/emotes/yuki-matsuri/hype.png", "assets/emotes/yuki-matsuri/love.png", "assets/emotes/yuki-matsuri/cocoa.png", "assets/emotes/yuki-matsuri/yukimaru.png"],
+    contents: ["16 emotes: Twitch 112/56/28 px + Discord 128 px (64 PNGs)", "16 transparent sticker PNGs", "16 high-res masters", "6 winter sub badges at 72/36/18 px", "4 cozy winter wallpapers (4K + 1080p)", "2027 New Year overlays (countdown + Happy New Year)", "12 bonus winter stickers + A4 print sheet", "Japanese autograph set: brush-signature portrait, calligraphy card, letter sheet, hanko overlays", "Upload guide, README and LICENSE"]
+  },
+  {
     slug: "neon-sakura-stream-kit", status: "live", url: "https://unifiedenergy11.gumroad.com/l/neon-sakura-stream",
     name: "Neon Sakura", title: "Neon Sakura Stream Kit", oc: "", jp: "桜", line: "stream", price: 19,
     hook: "Cyber-sakura OBS screens, alerts, webcam frames and channel panels.",
