@@ -106,7 +106,7 @@ window.UE11_PRODUCTS = [
 
   {
     slug: "samurai-emotions-rei", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-emotions-rei",
-    name: "Rei", title: "UE11 Samurai Emotions: Rei", oc: "Rei", jp: "玲", line: "samurai", price: 9, wasPrice: 15,
+    name: "Rei", title: "UE11 Samurai Emotions: Rei", oc: "Rei", jp: "玲", line: "samurai", price: 15,
     hook: "24 emotes of a calm woman samurai OC with a crimson streak, plus battle wallpapers.",
     art: "assets/gallery/samurai-emotions-rei.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-emotions-rei/hype.png", "assets/emotes/samurai-emotions-rei/gg.png", "assets/emotes/samurai-emotions-rei/lul.png", "assets/emotes/samurai-emotions-rei/love.png"],
@@ -114,7 +114,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "samurai-emotions-aoi", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-emotions",
-    name: "Aoi", title: "UE11 Samurai Emotions", oc: "Aoi", jp: "蒼", line: "samurai", price: 9, wasPrice: 15,
+    name: "Aoi", title: "UE11 Samurai Emotions", oc: "Aoi", jp: "蒼", line: "samurai", price: 15,
     hook: "24 emotes of Aoi, a cobalt-eyed samurai OC, plus battle wallpapers.",
     art: "assets/gallery/samurai-emotions-aoi.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-emotions-aoi/hype.png", "assets/emotes/samurai-emotions-aoi/gg.png", "assets/emotes/samurai-emotions-aoi/lul.png", "assets/emotes/samurai-emotions-aoi/love.png"],
@@ -122,7 +122,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "samurai-demon-kurogane", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-demon-kurogane",
-    name: "Kurogane", title: "Kurogane Samurai Emote Pack", oc: "Kurogane", jp: "黒鉄", line: "samurai", price: 9, wasPrice: 15,
+    name: "Kurogane", title: "Kurogane Samurai Emote Pack", oc: "Kurogane", jp: "黒鉄", line: "samurai", price: 15,
     hook: "24 emotes of a steel-eyed human demon-fighter, plus 4 battle wallpapers.",
     art: "assets/gallery/samurai-demon-kurogane.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-demon-kurogane/hype.png", "assets/emotes/samurai-demon-kurogane/gg.png", "assets/emotes/samurai-demon-kurogane/lul.png", "assets/emotes/samurai-demon-kurogane/love.png"],
@@ -130,7 +130,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "samurai-cyber-zero", status: "live", url: "https://unifiedenergy11.gumroad.com/l/samurai-cyber-zero",
-    name: "Zero-Blade", title: "Zero-Blade Cyber Samurai Emote Pack", oc: "Zero-Blade", jp: "零", line: "samurai", price: 9, wasPrice: 15,
+    name: "Zero-Blade", title: "Zero-Blade Cyber Samurai Emote Pack", oc: "Zero-Blade", jp: "零", line: "samurai", price: 15,
     hook: "24 emotes of a neon cyber samurai, plus 4 rain-soaked battle wallpapers.",
     art: "assets/gallery/samurai-cyber-zero.webp",
     sampleKind: "emote", samples: ["assets/emotes/samurai-cyber-zero/hype.png", "assets/emotes/samurai-cyber-zero/gg.png", "assets/emotes/samurai-cyber-zero/lul.png", "assets/emotes/samurai-cyber-zero/love.png"],
@@ -138,7 +138,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "sushi-pack", status: "live", url: "https://unifiedenergy11.gumroad.com/l/sushi-pack",
-    name: "Sushi", title: "UE11 Sushi Pack", oc: "", jp: "寿司", line: "kawaii", price: 9, wasPrice: 12,
+    name: "Sushi", title: "UE11 Sushi Pack", oc: "", jp: "寿司", line: "kawaii", price: 12,
     hook: "24 kawaii sushi critters as die-cut stickers and emotes, plus cozy scenes.",
     art: "assets/gallery/sushi-pack.webp",
     sampleKind: "emote", samples: ["assets/emotes/sushi-pack/salmon-nigiri.png", "assets/emotes/sushi-pack/wasabi-blob.png", "assets/emotes/sushi-pack/egg-tamago.png", "assets/emotes/sushi-pack/tuna-nigiri.png"],
@@ -146,7 +146,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "soup-ramen-pack", status: "live", url: "https://unifiedenergy11.gumroad.com/l/soup-ramen-pack",
-    name: "Soup & Ramen", title: "Soup & Ramen Kawaii Sticker Pack", oc: "", jp: "ラーメン", line: "kawaii", price: 9, wasPrice: 12,
+    name: "Soup & Ramen", title: "Soup & Ramen Kawaii Sticker Pack", oc: "", jp: "ラーメン", line: "kawaii", price: 12,
     hook: "15 ramen, gyoza and miso critters, plus cozy counter screensavers.",
     art: "assets/gallery/soup-ramen-pack.webp",
     sampleKind: "emote", samples: ["assets/emotes/soup-ramen-pack/ramen-bowl.png", "assets/emotes/soup-ramen-pack/gyoza.png", "assets/emotes/soup-ramen-pack/takoyaki.png", "assets/emotes/soup-ramen-pack/dumpling-trio.png"],
@@ -154,7 +154,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "kitsune-ember-seal", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kitsune-ember-seal",
-    name: "Kitsune", title: "Kitsune Ember Seal Emote Pack", oc: "", jp: "狐", line: "yokai", price: 9, wasPrice: 17,
+    name: "Kitsune", title: "Kitsune Ember Seal Emote Pack", oc: "", jp: "狐", line: "yokai", price: 17,
     hook: "24 emotes of an ember fox spirit, plus shrine screensavers and a 狐 seal set.",
     art: "assets/gallery/kitsune-ember-seal.webp",
     sampleKind: "emote", samples: ["assets/emotes/kitsune-ember-seal/hype.png", "assets/emotes/kitsune-ember-seal/gg.png", "assets/emotes/kitsune-ember-seal/lul.png", "assets/emotes/kitsune-ember-seal/love.png"],
@@ -162,7 +162,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "oni-pulse-mask", status: "live", url: "https://unifiedenergy11.gumroad.com/l/oni-pulse-mask",
-    name: "Oni", title: "Oni Pulse Mask Emote Pack", oc: "", jp: "鬼", line: "yokai", price: 9, wasPrice: 19,
+    name: "Oni", title: "Oni Pulse Mask Emote Pack", oc: "", jp: "鬼", line: "yokai", price: 19,
     hook: "16 horned oni-mask emotes, plus temple scenes and battle wallpapers.",
     art: "assets/gallery/oni-pulse-mask.webp",
     sampleKind: "emote", samples: ["assets/emotes/oni-pulse-mask/hype.png", "assets/emotes/oni-pulse-mask/gg.png", "assets/emotes/oni-pulse-mask/lul.png", "assets/emotes/oni-pulse-mask/love.png"],
@@ -170,7 +170,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "chochin-lantern-ghost", status: "live", url: "https://unifiedenergy11.gumroad.com/l/chochin-lantern-ghost",
-    name: "Chōchin", title: "Halloween Kawaii Ghost Twitch Emotes & Discord Stickers | Chochi Lantern OC", oc: "Chochi", jp: "提灯", line: "halloween", price: 9, wasPrice: 14,
+    name: "Chōchin", title: "Halloween Kawaii Ghost Twitch Emotes & Discord Stickers | Chochi Lantern OC", oc: "Chochi", jp: "提灯", line: "halloween", price: 14,
     hook: "16 mood-glow lantern-ghost emotes, soft Halloween scenes, bonus stickers and Twitch sub badges.",
     art: "assets/gallery/chochin-lantern-ghost.webp",
     sampleKind: "emote", samples: ["assets/emotes/chochin-lantern-ghost/hype.png", "assets/emotes/chochin-lantern-ghost/gg.png", "assets/emotes/chochin-lantern-ghost/lul.png", "assets/emotes/chochin-lantern-ghost/love.png"],
@@ -178,7 +178,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "komori-candy-bat", status: "live", url: "https://unifiedenergy11.gumroad.com/l/komori-candy-bat",
-    name: "Komori", title: "Halloween Kawaii Bat Twitch Emotes & Discord Stickers | Komori Candy Bat OC", oc: "Komori", jp: "蝙蝠", line: "halloween", price: 9, wasPrice: 14,
+    name: "Komori", title: "Halloween Kawaii Bat Twitch Emotes & Discord Stickers | Komori Candy Bat OC", oc: "Komori", jp: "蝙蝠", line: "halloween", price: 14,
     hook: "16 candy-bat emotes in hang and upright poses, soft night scenes, bonus stickers and Twitch sub badges.",
     art: "assets/gallery/komori-candy-bat.webp",
     sampleKind: "emote", samples: ["assets/emotes/komori-candy-bat/hype.png", "assets/emotes/komori-candy-bat/gg.png", "assets/emotes/komori-candy-bat/lul.png", "assets/emotes/komori-candy-bat/love.png"],
@@ -186,7 +186,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "origami-friends", status: "live", url: "https://unifiedenergy11.gumroad.com/l/origami-friends",
-    name: "Origami", title: "Origami Friends Kawaii Sticker Pack", oc: "", jp: "折り紙", line: "kawaii", price: 9, wasPrice: 12,
+    name: "Origami", title: "Origami Friends Kawaii Sticker Pack", oc: "", jp: "折り紙", line: "kawaii", price: 12,
     hook: "11 folded-paper crane, fox, bunny, cat and frog stickers, plus picnic scenes.",
     art: "assets/gallery/origami-friends.webp",
     sampleKind: "emote", samples: ["assets/emotes/origami-friends/crane-love.png", "assets/emotes/origami-friends/fox-happy.png", "assets/emotes/origami-friends/cat-love.png", "assets/emotes/origami-friends/bunny-sleep.png"],
@@ -210,7 +210,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "emote-lab-vol1", status: "live", url: "https://unifiedenergy11.gumroad.com/l/emote-lab-vol1",
-    name: "Emote Lab", title: "UE11 Emote Lab Vol.1", oc: "Pip", jp: "絵文字", line: "stream", price: 9, wasPrice: 19,
+    name: "Emote Lab", title: "UE11 Emote Lab Vol.1", oc: "Pip", jp: "絵文字", line: "stream", price: 19,
     hook: "24 Twitch and Discord emotes starring Pip, an original pastel critter.",
     art: "assets/gallery/emote-lab-vol1.webp",
     sampleKind: "emote", samples: ["assets/emotes/emote-lab-vol1/hype.png", "assets/emotes/emote-lab-vol1/gg.png", "assets/emotes/emote-lab-vol1/lul.png", "assets/emotes/emote-lab-vol1/love.png"],
@@ -218,7 +218,7 @@ window.UE11_PRODUCTS = [
   },
   {
     slug: "kabocha-ronin", status: "live", url: "https://unifiedenergy11.gumroad.com/l/kabocha-ronin",
-    name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 9, wasPrice: 19,
+    name: "Kabocha Ronin", title: "UE11 Kabocha Ronin: Halloween Samurai Emote Pack", oc: "Jinpachi", jp: "南瓜浪人", line: "samurai", price: 19,
     hook: "26 emotes of Jinpachi, a jack-o'-lantern-masked ronin, plus 4K yokai battle scenes.",
     art: "assets/gallery/kabocha-ronin.webp",
     sampleKind: "emote", samples: ["assets/emotes/kabocha-ronin/hype.png", "assets/emotes/kabocha-ronin/boo.png", "assets/emotes/kabocha-ronin/lurk.png", "assets/emotes/kabocha-ronin/heart_eyes.png"],
